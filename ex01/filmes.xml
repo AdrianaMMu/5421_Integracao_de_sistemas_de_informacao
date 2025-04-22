@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo [
+<!ELEMENT catalogo (filme*)>
+<!ELEMENT filme (titulo, diretor, ano, genero)>
+<!ATTLIST filme id ID #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT diretor (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+]>
+<catalogo>
+    <filme id="F1">
+        <titulo>A Origen</titulo>
+        <diretor>Christopher Nolan </diretor>
+        <ano>2010</ano>
+        <genero>Ficção Científica</genero>
+
+    </filme>
+    <filme id="F2">
+        <titulo>Interstellar</titulo>
+        <diretor>Christopher Nolan</diretor>
+        <ano>2014</ano>
+        <genero>Ficção Científica</genero>
+
+    </filme>   
+</catalogo>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  
+<xs:element name="catalogo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="musica" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titulo" type="xs:string" use="required" />
+              <xs:element name="artista" type="xs:string" use="required"/>
+              <xs:element name="album" type="xs:string" use="required"/>
+              <xs:element name="ano" type="xs:gYear" use="required"/>
+              <xs:element name="duracao" type="xs:decimal" use="required"/>
+              <xs:element name="genero" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:ID" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  </xs:schema>
+
+  <catalogo>
+    <musica id="M1">
+      <titulo>Bohemian Rhapsody</titulo>
+      <artista>Queen</artista>
+      <album>A Night at the Opera</album>
+      <ano>1975</ano>
+      <duracao>5.55</duracao>
+      <genero>Rock</genero>
+    </musica>
+    <musica id="M2">
+      <titulo>Imagine</titulo>
+      <artista>John Lennon</artista>
+      <album>Imagine</album>
+      <ano>1971</ano>
+      <duracao>3.02</duracao>
+      <genero>Pop</genero>
+    </musica>
+  </catalogo>
